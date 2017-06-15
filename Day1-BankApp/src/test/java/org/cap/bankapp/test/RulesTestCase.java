@@ -20,7 +20,7 @@ public class RulesTestCase {
 		Customer customer=null;
 		
 		thrown.expect(IllegalArgumentException.class);
-		thrown.expectMessage("Invalid Customer.");
+		thrown.expectMessage("Customer should not be null.");
 		
 		
 		acccountService.addAccount(customer, 1000);
